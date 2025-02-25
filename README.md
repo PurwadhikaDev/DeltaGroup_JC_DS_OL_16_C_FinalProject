@@ -146,6 +146,8 @@ Gunakan lebih banyak data untuk meningkatkan akurasi model.
 
 ## Link Model Streamlit
 https://deltagroup-jcdsol-016-c-finalproject.streamlit.app/
+![Homepage Screenshot](https://github.com/PurwadhikaDev/DeltaGroup_JC_DS_OL_16_C_FinalProject/blob/main/Streamlit%20Final%20Project%201.JPG)
+![Homepage Screenshot](https://github.com/PurwadhikaDev/DeltaGroup_JC_DS_OL_16_C_FinalProject/blob/main/Streamlit%20Final%20Project%202.JPG)
 
 ## Link Dashboard Tableau Public
 https://public.tableau.com/app/profile/putra.hardi.ramadhan/viz/FinalProjectWork_17403866169210/Dashboard1?publish=yes
