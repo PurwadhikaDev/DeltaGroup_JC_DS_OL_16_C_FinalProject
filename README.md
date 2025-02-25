@@ -71,6 +71,23 @@ Dataset ini terdiri dari 8.035 entri dengan 13 kolom, yang mencakup berbagai inf
 |Price       |Integer    | Harga mobil (dalam Riyal Saudi)                     |
 |Negotiable  |Boolean    | Indikator apakah harga bisa dinegosiasi (True/False)|
 
+## Cara menajalankan model dengan Streamlit
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi Streamlit:
+
+1. Pastikan Anda sudah menginstal semua library yang diperlukan dengan menjalankan perintah berikut di terminal atau command prompt:
+
+````pip install pandas numpy scikit-learn==1.5.2 xgboost streamlit````
+
+
+2. Setelah instalasi selesai, jalankan aplikasi Streamlit menggunakan perintah berikut:
+````streamlit run app.py````
+
+3. Akses aplikasi di browser Anda menggunakan URL yang ditampilkan, seperti `http://localhost:8501`.
+
+4. Masukkan data yang diperlukan ke dalam aplikasi untuk melihat hasil prediksi harga mobil bekas.
+
+Jika Anda mengalami kesalahan saat menjalankan aplikasi, pastikan semua file seperti `app.py` dan `xgb_model.pkl` tersedia di direktori proyek Anda.
 
 
 ## Link Dashboard Tableau Public
