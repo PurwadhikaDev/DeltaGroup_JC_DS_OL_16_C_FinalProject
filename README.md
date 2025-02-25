@@ -128,8 +128,7 @@ Gunakan XGBoost tanpa tuning jika ingin model yang lebih cepat dan akurat untuk 
 Jika ingin meningkatkan prediksi pada mobil mewah atau harga ekstrem, lakukan tuning lebih lanjut.
 
 - Jika pasar target adalah mobil premium, tuning diperlukan untuk menangani harga yang lebih variatif.
--
-Namun, perlu memastikan bahwa tuning tidak mengorbankan MAE dan MAPE secara signifikan.
+- Namun, perlu memastikan bahwa tuning tidak mengorbankan MAE dan MAPE secara signifikan.
 
 Gunakan transformasi Box-Cox dalam model untuk meningkatkan distribusi harga.
 - Transformasi ini telah membantu model memahami pola harga dengan lebih baik.
