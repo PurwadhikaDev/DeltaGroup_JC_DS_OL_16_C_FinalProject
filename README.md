@@ -83,6 +83,68 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi Streamlit:
 Jika Anda mengalami kesalahan saat menjalankan aplikasi, pastikan semua file seperti `app.py` dan `xgb_model.pkl` tersedia di direktori proyek Anda.
 
 
+## **Conclusion**
+Faktor-Faktor yang Mempengaruhi Harga Mobil Bekas
+
+- Tahun Produksi (Year): Mobil yang lebih baru cenderung memiliki harga lebih tinggi.
+
+- Jarak Tempuh (Mileage): Mobil dengan jarak tempuh lebih rendah memiliki harga yang lebih tinggi.
+
+- Kapasitas Mesin (Engine_Size): Mobil dengan kapasitas mesin lebih besar cenderung lebih mahal.
+- Merek (Make) & Model (Type): Merek premium dan model tertentu memiliki harga lebih tinggi.
+- Lokasi Penjualan (Region): Harga mobil bisa bervariasi berdasarkan lokasi.
+- Jenis Bahan Bakar (Fuel_Type) & Transmisi (Gear_Type): Jenis bahan bakar dan transmisi memengaruhi harga mobil, terutama dalam segmen mobil mewah.
+
+Performa Model Machine Learning
+
+- XGBoost tanpa tuning memberikan hasil yang cukup baik.
+- Random Forest memiliki performa baik dalam validasi silang (CV), tetapi kurang baik pada data uji.
+- Setelah diuji, XGBoost lebih unggul dibandingkan Random Forest dalam menangani data test set.
+
+Hasil Evaluasi Model Tanpa Hyperparameter Tuning
+
+- RMSE = 11.090 (semakin kecil semakin baik).
+- MAE = 6.285 (kesalahan rata-rata sekitar 6.285 Riyal).
+- MAPE = 9.28% (kesalahan relatif terhadap harga sebenarnya).
+
+Transformasi Box-Cox Berhasil Menormalkan Harga
+
+- Transformasi Box-Cox dengan λ = 0.30611 membantu mengurangi skewness pada distribusi harga, meningkatkan akurasi model.
+
+Hyperparameter Tuning Tidak Selalu Lebih Baik
+
+- Setelah tuning, RMSE membaik (11.090 → 10.782), tetapi MAE & MAPE justru meningkat sedikit.
+- Jika prioritas utama adalah mengurangi error besar (outliers), tuning bisa diterapkan.
+- Jika prioritas utama adalah akurasi prediksi untuk mayoritas mobil (bukan outliers), tuning tidak diperlukan.
+
+Dari feature importances data yang telah di modelling menggunakan XGBoost menunjukkan bahwa fitur-fitur terpenting kebanyakan berasal dari Make, dan Type. Make dan Type yang bersifat mewah lebih memiliki nilai yang lebih tinggi dibanding yang lain. Beberapa fitur lain seperti Engine Size dan Options juga mempengaruhi harga.
+
+## **Recommendations**
+Gunakan XGBoost tanpa tuning jika ingin model yang lebih cepat dan akurat untuk mobil standar.
+
+- Jika fokus pada mobil dengan harga menengah ke bawah, menggunakan XGBoost tanpa tuning sudah cukup baik.
+- Model ini lebih stabil dan menghindari overfitting dibandingkan Random Forest.
+
+Jika ingin meningkatkan prediksi pada mobil mewah atau harga ekstrem, lakukan tuning lebih lanjut.
+
+- Jika pasar target adalah mobil premium, tuning diperlukan untuk menangani harga yang lebih variatif.
+-
+Namun, perlu memastikan bahwa tuning tidak mengorbankan MAE dan MAPE secara signifikan.
+
+Gunakan transformasi Box-Cox dalam model untuk meningkatkan distribusi harga.
+- Transformasi ini telah membantu model memahami pola harga dengan lebih baik.
+- Jika ingin mengembalikan hasil prediksi ke harga asli, gunakan inverse Box-Cox transformation.
+
+Implementasikan model dalam sistem penjualan mobil bekas.
+- Model ini bisa diterapkan dalam platform jual beli mobil untuk memberikan harga rekomendasi yang kompetitif.
+- Dealer bisa menggunakan model ini untuk menentukan harga jual optimal berdasarkan data historis.
+
+Gunakan lebih banyak data untuk meningkatkan akurasi model.
+
+- Menambahkan lebih banyak fitur, seperti riwayat servis, kondisi interior, atau jumlah pemilik sebelumnya, bisa meningkatkan prediksi harga.
+- Model juga bisa ditingkatkan dengan menggunakan lebih banyak data dari berbagai wilayah di Arab Saudi.
+
+
 ## Link Dashboard Tableau Public
 https://public.tableau.com/app/profile/putra.hardi.ramadhan/viz/FinalProjectWork_17403866169210/Dashboard1?publish=yes
 
