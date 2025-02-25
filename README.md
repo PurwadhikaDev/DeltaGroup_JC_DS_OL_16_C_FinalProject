@@ -22,13 +22,6 @@ Mengidentifikasi faktor utama yang memengaruhi harga mobil bekas melalui analisa
 
 Membuat model prediktif untuk memprediksi harga jual mobil bekas berdasarkan fitur-fitur yang tersedia. Model ini dapat membantu dealer mobil dalam menentukan harga yang sesuai dengan nilai pasar.
 
-## Target:
-
-### H0 (Null Hypothesis):
-Tidak ada hubungan yang signifikan antara atribut kendaraan (seperti merek, tahun, spesifikasi, dll.) dan harga jual.
-### H1 (Alternative Hypothesis):
-Ada hubungan yang signifikan antara atribut kendaraan (seperti merek, tahun, spesifikasi, dll.) dan harga jual.
-
 ## Goals :
 - Memahami pola dan hubungan antara atribut mobil bekas dan harga.
 - Membangun model prediksi harga mobil bekas yang dapat membantu dalam pengambilan keputusan harga.
