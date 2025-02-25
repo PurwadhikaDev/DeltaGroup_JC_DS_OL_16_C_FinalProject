@@ -70,3 +70,10 @@ Dataset ini terdiri dari 8.035 entri dengan 13 kolom, yang mencakup berbagai inf
 |Region      |String     | Wilayah lokasi mobil dijual                         |
 |Price       |Integer    | Harga mobil (dalam Riyal Saudi)                     |
 |Negotiable  |Boolean    | Indikator apakah harga bisa dinegosiasi (True/False)|
+
+
+
+## Link Dashboard Tableau Public
+https://public.tableau.com/app/profile/putra.hardi.ramadhan/viz/FinalProjectWork_17403866169210/Dashboard1?publish=yes
+
+## Link Model Streamlit
