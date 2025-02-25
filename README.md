@@ -144,7 +144,10 @@ Gunakan lebih banyak data untuk meningkatkan akurasi model.
 - Model juga bisa ditingkatkan dengan menggunakan lebih banyak data dari berbagai wilayah di Arab Saudi.
 
 
+## Link Model Streamlit
+
 ## Link Dashboard Tableau Public
 https://public.tableau.com/app/profile/putra.hardi.ramadhan/viz/FinalProjectWork_17403866169210/Dashboard1?publish=yes
 
-## Link Model Streamlit
+## Screenshot
+![Homepage Screenshot](https://github.com/PurwadhikaDev/DeltaGroup_JC_DS_OL_16_C_FinalProject/blob/main/Tableau%20Final%20Project%20Screenshot.JPG)
